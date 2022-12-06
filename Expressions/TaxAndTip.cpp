@@ -2,7 +2,7 @@
 using namespace std;
 int main(){
 	float x, tip, tax;
-	cout<<"Enter the cost of the metal: ";
+	cout<<"Enter the cost of the meal: ";
 	cin>>x;
 	tip=0.05*x;
 	tax=0.18*x;
