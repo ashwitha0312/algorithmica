@@ -8,6 +8,6 @@ int main(){
 		sum+=n%10;
 		n=n/10;
 	}
-	cout<<sum;
+	cout<<"Sum of the digits of the integer: "<<sum;
 	return 0;
 }
