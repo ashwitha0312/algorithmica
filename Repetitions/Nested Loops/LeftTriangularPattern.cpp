@@ -1,11 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int n , i, j;
+	int n , i, j, k;
 	cout<<"Enter a number: ";
 	cin>>n;
 	for(i=0; i<n; i++){
-		for(j=n-1; j<i; j++){
+		for(j=0; j<=n-i-1; j++){
+			cout<<" ";
+		}
+		for(k=0;k<=i;k++){
 			cout<<"*";
 		}
 		cout<<"\n";
