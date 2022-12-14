@@ -1,11 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-	int r, decimal;
-	cout<<"Enter a decimal number: ";
+	int i,decimal,rem,binary=0;
+	cout<<"Enter a decimal number";
 	cin>>decimal;
-	string result="";
-	while(decimal!=0){
-		r=q%2;
+	for(i=0;decimal!=0;i++){
+		rem=decimal%2;
+		binary+=rem*pow(10,i);
+		decimal=decimal/2;
 	}
+	cout<<binary;
+	return 0;
 }
