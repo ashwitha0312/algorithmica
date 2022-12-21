@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 bool isPalindrome(string s){
-	string reverse="";
-	for(int i=0;i<s.length();i++){
-		char ch=s[s.length()-i-1];
-		reverse.append(1,ch);
-	}
-	if(reverse==s)
+	string rev=s;
+	reverse(rev.begin(),rev.end());
+	if(rev==s)
 		return true;
 	else
 		return false;
